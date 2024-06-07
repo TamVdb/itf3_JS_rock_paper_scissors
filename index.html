@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Rock Paper Scissors</title>
+      <link rel="stylesheet" href="style/style.css" />
+      <script defer src="./js/script.js"></script>
+   </head>
+   <body>
+      <main>
+         <div class="main_title">
+            <h1>Pierre | Papier | Ciseaux</h1>
+         </div>
+         <div class="container">
+            <div class="game_container">
+               <div class="gamer">
+                  <div class="title">Joueur</div>
+                  <div id="gamer_card" class="cards">
+                     <img id="rock" src="./images/pierre.png" alt="pierre" />
+                     <img id="paper" src="./images/papier.png" alt="papier" />
+                     <img
+                        id="scissors"
+                        src="./images/ciseaux.png"
+                        alt="ciseaux"
+                     />
+                  </div>
+                  <div class="result">
+                     <p id="gamer_result">0</p>
+                  </div>
+               </div>
+               <div class="infos">
+                  <div id="result_text" class="whatToDo">
+                     Cliquez sur une image pour jouer
+                  </div>
+               </div>
+               <div class="robot">
+                  <div class="title">Robot</div>
+                  <div id="robot_card" class="robot_card">
+                     <img id="img-robot" src="./images/base.png" alt="" />
+                  </div>
+                  <div class="result">
+                     <p id="robot_result">0</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="result_container">
+               <div class="stats">
+                  <h2>Statistiques</h2>
+                  <p>Vous : <span id="gamer_stats"></span></p>
+                  <p>Ordinateur : <span id="robot_stats"></span></p>
+               </div>
+               <div class="refresh">
+                  <div class="refresh_img">
+                     <svg
+                        id="replay"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-rotate-ccw"
+                     >
+                        <path
+                           d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+                        />
+                        <path d="M3 3v5h5" />
+                     </svg>
+                  </div>
+                  <p>Rejouer</p>
+               </div>
+               <div class="delete">
+                  <div class="delete_img">
+                     <svg
+                        id="erase"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-eraser"
+                     >
+                        <path
+                           d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"
+                        />
+                        <path d="M22 21H7" />
+                        <path d="m5 11 9 9" />
+                     </svg>
+                  </div>
+                  <p>Effacer</p>
+               </div>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>
